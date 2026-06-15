@@ -1,0 +1,167 @@
+.service-card {
+  width: 280px;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin: 15px;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Image container */
+.service-image-container {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover .service-image {
+  transform: scale(1.05);
+}
+
+/* Service details */
+.service-details {
+  padding: 16px;
+}
+
+.service-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 8px 0;
+}
+
+.service-rating {
+  margin-bottom: 10px;
+}
+
+.service-rating img {
+  height: 18px;
+}
+
+.service-description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 60px;
+}
+
+/* Footer with price and actions */
+.service-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-price {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ff6b6b;
+  margin: 0;
+}
+
+.service-actions {
+  display: flex;
+  align-items: center;
+}
+
+/* Add button */
+.add-button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #ff6b6b;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(255, 107, 107, 0.3);
+}
+
+.add-button:hover {
+  transform: scale(1.1);
+  background-color: #ff5252;
+}
+
+.add-button img {
+  width: 18px;
+  height: 18px;
+}
+
+/* Counter */
+.counter-container {
+  display: flex;
+  align-items: center;
+  background-color: #f8f8f8;
+  border-radius: 50px;
+  padding: 4px 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.counter-button {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.counter-button:hover {
+  transform: scale(1.1);
+}
+
+.counter-button img {
+  width: 14px;
+  height: 14px;
+}
+
+.counter-quantity {
+  font-weight: 600;
+  color: #333;
+  margin: 0 8px;
+  width: 20px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service-card {
+    width: 240px;
+  }
+  
+  .service-image-container {
+    height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-card {
+    width: 100%;
+    max-width: 320px;
+    margin: 10px auto;
+  }
+}

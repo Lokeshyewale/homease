@@ -1,0 +1,55 @@
+/* ================= NAVBAR ================= */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5%;
+  background-color: #ffffff; /* Dark blue for a sleek look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  height: 60px; /* Slightly increased for better spacing */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 0px 100px;
+}
+
+/* Logo */
+.logo-box {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 140px; /* Enhanced for visibility */
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.05); /* Subtle hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 3%;
+    padding: 0px 100px;
+  }
+
+  .logo {
+    width: 110px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px 2%;
+    height: 50px;
+    padding: 0px 100px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+}

@@ -1,0 +1,125 @@
+.auth-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.auth-page h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.auth-page input {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.auth-page button {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-page button:hover {
+  background-color: #0056b3;
+}
+
+.auth-page button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.auth-page .forgot-password {
+  color: #007bff;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.auth-page .forgot-password:hover {
+  text-decoration: underline;
+}
+
+.auth-page p {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.auth-page p:hover {
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.error-message {
+  color: #dc3545;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+}
+
+.server-status-error {
+  color: #856404;
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+}
+
+.server-status-error p {
+  margin: 0 0 15px 0;
+  color: #856404;
+}
+
+.retry-button {
+  width: auto !important;
+  padding: 8px 15px !important;
+  margin: 5px auto !important;
+  background-color: #ffc107 !important;
+  color: #212529 !important;
+  font-size: 0.9rem !important;
+}
+
+.retry-button:hover {
+  background-color: #e0a800 !important;
+}
+
+.toggle-auth-mode, .back-to-login {
+  color: #007bff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.toggle-auth-mode:hover, .back-to-login:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}

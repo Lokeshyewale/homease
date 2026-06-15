@@ -1,0 +1,22 @@
+{
+    "orderId": "order_test_123",
+    "paymentId": "pay_test_456",
+    "amount": 1500,
+    "userDetails": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john@example.com",
+        "phone": "9876543210",
+        "street": "123 Main St",
+        "city": "Mumbai",
+        "state": "MH",
+        "pincode": "400001",
+        "serviceDate": "2026-02-05"
+    },
+    "services": [
+        {
+            "name": "House Cleaning",
+            "quantity": 1
+        }
+    ]
+}

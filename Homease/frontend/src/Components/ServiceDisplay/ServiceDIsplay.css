@@ -1,0 +1,20 @@
+.service-display {
+  margin-top: 30px;
+  text-align: center;
+  padding: 20px;
+}
+
+.service-display h2 {
+  font-size: max(2.5vw, 24px);
+  font-weight: 600;
+  color: #1a237e;
+}
+
+.service-display-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  margin-top: 30px;
+  gap: 25px;
+  row-gap: 40px;
+  padding: 0 20px;
+}

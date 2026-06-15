@@ -1,0 +1,151 @@
+.cart {
+  margin: 80px auto;
+  max-width: 1200px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item-title {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  color: #555;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 0;
+  border-bottom: 2px solid #eee;
+}
+
+.cart-items-item {
+  margin: 15px 0;
+  color: #333;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+}
+
+.cart-items-item img {
+  width: 80px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart hr {
+  height: 1px;
+  background-color: #e2e2e2;
+  border: none;
+}
+
+.cart-items-item .cross {
+  cursor: pointer;
+  color: tomato;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cart-items-item .cross:hover {
+  color: red;
+}
+
+.cart-bottom {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.cart-total {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  color: #333;
+  font-weight: 500;
+}
+
+.cart-total hr {
+  margin: 10px 0px;
+}
+
+.cart-total button {
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  color: white;
+  background: linear-gradient(90deg, #ff6347, #ff4500);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cart-total button:hover {
+  background: linear-gradient(90deg, #ff4500, #ff6347);
+}
+
+.cart-promocode {
+  flex: 1;
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-promocode p {
+  color: #333;
+  font-size: 14px;
+}
+
+.cart-promocode-input {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #eaeaea;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.cart-promocode-input input {
+  background: transparent;
+  border: none;
+  outline: none;
+  flex: 1;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.cart-promocode-input button {
+  padding: 10px 15px;
+  color: white;
+  background: black;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cart-promocode-input button:hover {
+  background: #333;
+}
+
+@media (max-width: 750px) {
+  .cart-bottom {
+    flex-direction: column-reverse;
+  }
+
+  .cart-promocode {
+    justify-content: start;
+  }
+}

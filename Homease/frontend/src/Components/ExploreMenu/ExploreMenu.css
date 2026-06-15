@@ -1,0 +1,257 @@
+.explore-services {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+  padding: 60px 0;
+  background-color: #f9f9fc;
+  margin: 0 auto;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.explore-services-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.explore-services h1 {
+  color: #1a237e;
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin: 0;
+  position: relative;
+}
+
+.section-divider {
+  width: 80px;
+  height: 4px;
+  background-color: #1a237e;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.explore-services-text {
+  max-width: 60%;
+  color: #424242;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.explore-services-list-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.explore-services-list {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  text-align: center;
+  margin: 20px 0px;
+  flex-wrap: wrap;
+}
+
+.explore-services-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  width: 150px;
+  cursor: pointer;
+  position: relative;
+}
+
+.explore-services-list-item:hover {
+  background-color: rgba(26, 35, 126, 0.05);
+  transform: translateY(-5px);
+}
+
+.service-icon-container {
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.explore-services-list img {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  object-fit: contain;
+}
+
+.explore-services-list-item:hover .service-icon-container {
+  box-shadow: 0 8px 24px rgba(26, 35, 126, 0.2);
+}
+
+.explore-services-list-item p {
+  margin-top: 10px;
+  color: #1a237e;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.explore-services-list-item:hover p {
+  color: #303f9f;
+}
+
+.active-item {
+  background-color: rgba(26, 35, 126, 0.08);
+}
+
+.explore-services-list-item .active {
+  border: 3px solid #1a237e;
+  padding: 4px;
+  box-shadow: 0px 0px 15px rgba(26, 35, 126, 0.4);
+}
+
+.service-selected-indicator {
+  width: 40px;
+  height: 3px;
+  background-color: #1a237e;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.explore-services hr {
+  margin: 30px 0;
+  height: 1px;
+  background-color: #e0e0e0;
+  border: none;
+  width: 90%;
+}
+
+.explore-services-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.explore-services-cta p {
+  font-size: 1.1rem;
+  color: #424242;
+  font-weight: 500;
+}
+
+.contact-btn {
+  background: #1a237e;
+  color: white;
+  font-weight: 600;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-btn:hover {
+  background-color: #303f9f;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 1050px) {
+  .explore-services-text {
+    max-width: 80%;
+    font-size: 1.1rem;
+  }
+  
+  .explore-services h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .explore-services {
+    padding: 40px 0;
+    gap: 20px;
+  }
+
+  .explore-services-list {
+    gap: 20px;
+  }
+  
+  .explore-services-list-item {
+    width: 120px;
+  }
+  
+  .service-icon-container {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .explore-services-list img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .explore-services h1 {
+    font-size: 2rem;
+  }
+  
+  .explore-services-text {
+    max-width: 90%;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .explore-services {
+    padding: 30px 0;
+  }
+
+  .explore-services-list {
+    justify-content: space-around;
+    gap: 15px;
+  }
+  
+  .explore-services-list-item {
+    width: 100px;
+  }
+  
+  .service-icon-container {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .explore-services-list img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .explore-services h1 {
+    font-size: 1.6rem;
+  }
+  
+  .explore-services-text {
+    font-size: 0.9rem;
+  }
+}
+

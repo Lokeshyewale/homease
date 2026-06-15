@@ -1,0 +1,17 @@
+/* ================= NAVBAR ================= */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 6px 4%;
+  background-color: #0f172a; /* Dark blue for sleek look */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  height: 50px; /* Compact design */
+  padding: 0px 100px;
+}
+
+/* Logo */
+.logo {
+  width: 120px; /* Adjusted for balanced size */
+  height: auto;
+}

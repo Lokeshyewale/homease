@@ -1,0 +1,142 @@
+.header {
+  height: 36vw;
+  margin: 35px auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("https://media.istockphoto.com/id/1417833187/photo/professional-cleaner-vacuuming-a-carpet.jpg?s=612x612&w=0&k=20&c=5h8NBR190d46Ni4MclqJ7Zf9ZOtf3TM3gPRJaHUdMjk=") no-repeat center;
+  border-radius: 12px;
+  background-size: cover;
+  position: relative;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.header {
+  height: 100vh;
+  margin: 0 auto;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(https://safaiwale.in/wp-content/uploads/2024/11/House-cleaning.webp) no-repeat center; */
+  border-radius: 0px;
+  background-size: cover;
+  position: relative;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.header-contents {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.2vw;
+  max-width: 55%;
+  bottom: 12%;
+  left: 6vw;
+  animation: fadeIn 2s;
+}
+
+.header-contents h2 {
+  font-weight: 700;
+  color: white;
+  font-size: max(3.5vw, 24px);
+  margin-bottom: 0.5vw;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  line-height: 1.2;
+}
+
+.header-divider {
+  width: 80px;
+  height: 4px;
+  background-color: #1a237e;
+  margin: 0.5vw 0 1vw 0;
+  border-radius: 2px;
+}
+
+.header-contents p {
+  color: white;
+  font-size: max(1.1vw, 16px);
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.header-buttons {
+  display: flex;
+  gap: 1vw;
+  margin-top: 1vw;
+}
+
+.header-contents .primary-btn {
+  background: #1a237e;
+  color: white;
+  font-weight: 600;
+  padding: 1vw 2vw;
+  border: none;
+  border-radius: 6px;
+  font-size: max(1vw, 14px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.header-contents .secondary-btn {
+  background: transparent;
+  color: white;
+  font-weight: 600;
+  padding: 1vw 2vw;
+  border: 2px solid white;
+  border-radius: 6px;
+  font-size: max(1vw, 14px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header-contents .primary-btn:hover {
+  background-color: #303f9f;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.header-contents .secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 1050px) {
+  .header-contents {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 750px) {
+  .header {
+    height: 45vw;
+  }
+  
+  .header-contents {
+    max-width: 80%;
+    bottom: 10%;
+  }
+
+  .header-contents h2 {
+    font-size: max(4vw, 20px);
+  }
+
+  .header-contents p {
+    font-size: max(2vw, 14px);
+  }
+
+  .header-buttons {
+    flex-direction: column;
+    gap: 2vw;
+    width: 100%;
+  }
+
+  .header-contents .primary-btn,
+  .header-contents .secondary-btn {
+    padding: 2vw 4vw;
+    width: 100%;
+    text-align: center;
+  }
+}
