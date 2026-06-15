@@ -38,9 +38,13 @@ const Navbar = () => {
           Services
         </a>
 
-        <a href="https://homease-provider.vercel.app">
-        Become a Provider
-        </a>
+        <a
+        href="https://homease-v6sb.vercel.app"
+         className={menu === "Provider" ? "active" : ""}
+         onClick={() => setMenu("Provider")}
+         >
+         Become a Provider
+         </a>
 
         <a
           href="#footer"
